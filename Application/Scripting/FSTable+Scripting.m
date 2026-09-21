@@ -9,6 +9,12 @@
 
 #import "FlexiSheet.h"
 
+@interface FSTable (Scripting)
+
+- (NSArray*)scriptingKeysets;
+
+@end
+
 @implementation FSTable (Scripting)
 
 - (NSScriptObjectSpecifier*)objectSpecifier;
@@ -44,7 +50,10 @@
 {
 }
 
-
+- (NSArray*)scriptingKeysets
+{
+    return _keysets;
+}
 
 @end
 

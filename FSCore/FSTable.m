@@ -72,10 +72,6 @@ NSString* FSEditRevertedNotification     = @"FSEditReverted";
 
 @implementation FSTable
 
-- (NSArray*)scriptingKeysets
-{
-    return _keysets;
-}
 /*" An FSTable instance (also just called a table) is where FlexiSheet stores values.
     Users can give tables a name to reference them by.  Default names for tables are
     Table 1, Table 2, and so forth.

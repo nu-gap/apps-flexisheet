@@ -86,7 +86,6 @@
 - (FSHeader*)headerWithName:(NSString*)name;
 - (NSArray*)headersWithNames:(NSArray*)names;
 
-- (NSArray*)scriptingKeysets;
 - (NSArray*)keySetsForHeaders:(NSArray*)headers;
 
 // Value management
@@ -134,6 +133,7 @@
 - (BOOL)loadFromDictionary:(NSDictionary*)dictionary;
 
 @end
+
 
 //
 // Notification names
