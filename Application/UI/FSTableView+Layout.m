@@ -254,7 +254,7 @@ NSString  *FSLayoutStylesKey   = @"Styles";
 
 - (NSDictionary*)layoutDictionary
 {
-    NSEnumerator        *cursor = [[[dataSource table] headers] objectEnumerator];
+    NSEnumerator        *cursor = [[(FSTable *)[dataSource table] headers] objectEnumerator];
     FSHeader            *header;
     FSHeaderLayout      *hlo;
     NSMutableDictionary *sizes = [NSMutableDictionary dictionary];
@@ -316,7 +316,7 @@ NSString  *FSLayoutStylesKey   = @"Styles";
 
 - (void)applyLayoutDictionary:(NSDictionary*)dict
 {
-    NSEnumerator   *cursor = [[[dataSource table] headers] objectEnumerator];
+    NSEnumerator   *cursor = [[(FSTable *)[dataSource table] headers] objectEnumerator];
     FSHeader       *header;
     FSHeaderLayout *hlo;
     NSDictionary   *sizes = [dict objectForKey:FSLayoutSizesKey];
